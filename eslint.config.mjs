@@ -1,16 +1,27 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+import { FlatCompat } from '@eslint/eslintrc';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const filename = fileURLToPath(import.meta.url);
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory: dirname(filename),
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends('next/core-web-vitals', 'next/typescript', 'airbnb', 'airbnb/hooks'),
+  {
+    languageOptions: {
+      globals: {
+        React: true,
+      },
+    },
+    rules: {
+      'import/no-extraneous-dependencies': 'off',
+      'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
+      'react/react-in-jsx-scope': 'off',
+    },
+  },
 ];
 
 export default eslintConfig;
