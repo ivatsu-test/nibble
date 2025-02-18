@@ -17,6 +17,16 @@ const eslintConfig = [
       },
     },
     rules: {
+      'import/extensions': [
+        1,
+        'ignorePackages',
+        {
+          pattern: {
+            tsx: 'never',
+            ts: 'never',
+          },
+        },
+      ],
       'import/no-extraneous-dependencies': 'off',
       'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
       'react/react-in-jsx-scope': 'off',
