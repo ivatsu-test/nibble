@@ -1,0 +1,18 @@
+.button {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--white);
+  background-color: var(--orange-300);
+  border-radius: 8px;
+}
+
+
+@media (min-width: 992px) {
+  .button {
+    width: 296px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-size: 20px;
+  }
+}
