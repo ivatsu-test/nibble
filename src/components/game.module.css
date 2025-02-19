@@ -10,7 +10,7 @@
   padding: 0 16px;
   font-size: 18px;
   text-align: center;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .l-answers-container {
@@ -136,6 +136,7 @@
 
   .question {
     font-size: 32px;
+    align-self: center;
   }
 
   .l-answers-container {
