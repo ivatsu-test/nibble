@@ -5,6 +5,7 @@ import { redirect } from 'next/navigation';
 import { useState } from 'react';
 import route from '@/route';
 import styles from './game.module.css';
+import AnswerOptionButton from './buttons/answer-option-button/answer-option-button';
 
 export default function Game({ questions }: { questions: Question[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,17 +34,12 @@ export default function Game({ questions }: { questions: Question[] }) {
       <h2 className={styles.question}>{questions[currentIndex].question}</h2>
       <div className={styles['l-answers-container']}>
         {questions[currentIndex].answers.map((answer) => (
-          <button className={styles['answer-option-button']} key={answer.text} type="button" onClick={() => handleAnswer(answer.isCorrect)}>
-            <div className={styles['l-hexagon-container']}>
-              <div className={styles.hexagon__left} />
-              <div className={styles.hexagon} />
-              <div className={styles.hexagon__right} />
-            </div>
+          <AnswerOptionButton key={answer.text} kind="default" onClick={() => handleAnswer(answer.isCorrect)}>
             <div className={styles['l-answer']}>
               <span className={styles.answer__option}>{answer.option}</span>
               <span className={styles.answer__text}>{answer.text}</span>
             </div>
-          </button>
+          </AnswerOptionButton>
         ))}
       </div>
     </div>

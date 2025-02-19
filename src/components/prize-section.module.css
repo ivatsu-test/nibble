@@ -1,0 +1,56 @@
+.menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.prize-section {
+  background-color: var(--black-100);
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 56px;
+  right: -100%;
+  transition: 850ms;
+  z-index: 20;
+}
+
+.prize-section--active {
+  right: 0;
+  transition: 450ms;
+}
+
+.prize-section__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.l-question-prize {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: calc(100vw - 320px);
+  height: 100vh;
+  background-color: var(--black-100);
+  z-index: 10;
+}
+
+.overlay--active {
+  display: block;
+}

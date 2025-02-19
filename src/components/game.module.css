@@ -10,7 +10,7 @@
   padding: 0 16px;
   font-size: 18px;
   text-align: center;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .l-answers-container {
@@ -20,93 +20,6 @@
   align-items: center;
   gap: 8px;
   align-self: flex-end;
-}
-
-.answer-option-button {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.l-hexagon-container {
-  position: relative;
-}
-
-.hexagon {
-  --height: 56px;
-  height: var(--height);
-  width: 246px;
-  background-color: var(--white);
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
-  border: 3px solid var(--black-300);
-}
-
-.hexagon__left,
-.hexagon__right {
-  --height: 56px;
-  --line-width: 24px;
-  width: 0;
-  position: absolute;
-  top: calc(var(--height) / 2 - var(--line-width));
-  border-top: var(--line-width) solid transparent;
-  border-bottom: var(--line-width) solid transparent;
-}
-
-.hexagon__left {
-  left: -21px;
-  border-right: var(--line-width) solid var(--black-300);
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    right: -1px;
-    width: 17px;
-    height: 2px;
-    background-color: var(--black-300);
-  }
-
-  &::after {
-    content: '';
-    width: 0;
-    height: 0;
-    border-top: 21px solid transparent;
-    border-bottom: 21px solid transparent;
-    border-right: 21px solid var(--white);
-    position: absolute;
-    top: -21px;
-    left: 4px;
-  }
-}
-
-.hexagon__right {
-  right: -21px;
-  border-left: var(--line-width) solid var(--black-300);
-
-  &::before {
-    content: '';
-    width: 0;
-    height: 0;
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
-    border-left: 24px solid var(--white);
-    position: absolute;
-    top: -24px;
-    right: 4px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: -1px;
-    width: 17px;
-    height: 2px;
-    background-color: var(--black-300);
-  }
 }
 
 .l-answer {
@@ -136,6 +49,7 @@
 
   .question {
     font-size: 32px;
+    align-self: center;
   }
 
   .l-answers-container {
@@ -144,9 +58,5 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px 90px;
-  }
-
-  .hexagon {
-    width: 319px;
   }
 }
