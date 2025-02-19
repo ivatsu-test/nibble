@@ -2,8 +2,8 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
-  color: var(--white);
-  background-color: var(--orange-300);
+  color: var(--white-100);
+  background-color: var(--orange-100);
   border-radius: 8px;
 }
 

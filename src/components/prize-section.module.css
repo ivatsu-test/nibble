@@ -5,7 +5,7 @@
 }
 
 .prize-section {
-  background-color: var(--black-100);
+  background-color: var(--black-5);
   width: 320px;
   height: 100vh;
   display: flex;
@@ -47,7 +47,7 @@
   left: 0;
   width: calc(100vw - 320px);
   height: 100vh;
-  background-color: var(--black-100);
+  background-color: var(--black-5);
   z-index: 10;
 }
 
@@ -57,7 +57,7 @@
 
 @media (min-width: 1200px) {
   .prize-section {
-    background-color: var(--white);
+    background-color: var(--white-100);
     height: 100vh;
     display: flex;
     justify-content: center;

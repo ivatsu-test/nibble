@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-color: var(--black-100);
+  background-color: var(--black-5);
 }
 
 @media (min-width: 992px) {

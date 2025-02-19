@@ -12,11 +12,11 @@
 }
 
 .l-page-bg__start {
-  background: linear-gradient(to bottom right, var(--white) 50%, var(--orange-100) 50%);
+  background: linear-gradient(to bottom right, var(--white-100) 50%, var(--orange-5) 50%);
 }
 
 .l-page-bg__game-over {
-  background-color: var(--black-100);
+  background-color: var(--black-5);
 }
 
 
