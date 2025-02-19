@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import clsx from 'clsx';
-import StartButton from '@/components/start-button';
+import StartButton from '@/components/buttons/start-button/start-button';
 import styles from './start-page.module.css';
 
 export default function StartPage() {
