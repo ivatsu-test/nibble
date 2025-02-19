@@ -14,7 +14,7 @@ export default function GamePage() {
   return (
     <div className={styles['l-game-page']}>
       <Game questions={res.data} />
-      <PrizeSection />
+      <PrizeSection questions={res.data} />
     </div>
   );
 }

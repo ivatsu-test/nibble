@@ -34,7 +34,7 @@ export default function Game({ questions }: { questions: Question[] }) {
       <h2 className={styles.question}>{questions[currentIndex].question}</h2>
       <div className={styles['l-answers-container']}>
         {questions[currentIndex].answers.map((answer) => (
-          <AnswerOptionButton key={answer.text} onClick={() => handleAnswer(answer.isCorrect)}>
+          <AnswerOptionButton key={answer.text} kind="default" onClick={() => handleAnswer(answer.isCorrect)}>
             <div className={styles['l-answer']}>
               <span className={styles.answer__option}>{answer.option}</span>
               <span className={styles.answer__text}>{answer.text}</span>
