@@ -10,13 +10,13 @@
 .score {
   font-weight: 600;
   font-size: 18px;
-  color: var(--black-300);
+  color: var(--black-40);
 }
 
 .amount {
   font-weight: 600;
   font-size: 32px;
-  color: var(--black-500);
+  color: var(--black-100);
 }
 
 @media (min-width: 992px) {

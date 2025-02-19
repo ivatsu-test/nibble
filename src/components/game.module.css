@@ -32,13 +32,13 @@
 .answer__option {
   font-weight: 600;
   font-size: 14px;
-  color: var(--orange-300);
+  color: var(--orange-100);
 }
 
 .answer__text {
   font-weight: 400;
   font-size: 14px;
-  color: var(--black-500);
+  color: var(--black-100);
 }
 
 @media (min-width: 992px) {
