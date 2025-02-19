@@ -1,0 +1,36 @@
+
+.text {
+  margin-top: 24px;
+  margin-bottom: 102px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.score {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black-300);
+}
+
+.amount {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--black-500);
+}
+
+@media (min-width: 992px) {
+  .score {
+    font-size: 32px;
+  }
+  
+  .amount {
+    font-size: 56px;
+  }
+
+  .text {
+    font-size: 56px;
+    text-align: start;
+    margin-bottom: 64px;
+  }
+}
