@@ -12,9 +12,9 @@ export default function AnswerOptionButton(props: AnswerOptionButtonProps) {
     <button className={styles['l-container']} type="button" onClick={onClick}>
       <div className={styles['l-hexagon']}>
         {/* TODO: create config to pick needed className */}
-        <div className={clsx(kind === 'default' && styles.hexagon__left, kind === 'prize-mobile' && styles['hexagon-mobile__left'])} />
-        <div className={clsx(kind === 'default' && styles.hexagon, kind === 'prize-mobile' && styles['hexagon-mobile'])} />
-        <div className={clsx(kind === 'default' && styles.hexagon__right, kind === 'prize-mobile' && styles['hexagon-mobile__right'])} />
+        <div className={clsx(kind === 'default' && styles.hexagon__left, kind === 'prize-mobile' && styles['hexagon-mobile__left'], kind === 'prize-desktop' && styles['hexagon-desktop__left'])} />
+        <div className={clsx(kind === 'default' && styles.hexagon, kind === 'prize-mobile' && styles['hexagon-mobile'], kind === 'prize-desktop' && styles['hexagon-desktop'])} />
+        <div className={clsx(kind === 'default' && styles.hexagon__right, kind === 'prize-mobile' && styles['hexagon-mobile__right'], kind === 'prize-desktop' && styles['hexagon-desktop__right'])} />
       </div>
       {children}
     </button>

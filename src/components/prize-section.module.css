@@ -54,3 +54,15 @@
 .overlay--active {
   display: block;
 }
+
+@media (min-width: 1200px) {
+  .prize-section {
+    background-color: var(--white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+  }
+}
