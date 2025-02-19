@@ -1,0 +1,326 @@
+[
+	{
+		"id": 1,
+		"question": "What is the capital of France?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "London",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "Berlin",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "Paris",
+				"isCorrect": true
+			},
+			{
+				"option": "D",
+				"text": "Madrid",
+				"isCorrect": false
+			}
+		],
+		"prize": "$500"
+	},
+	{
+		"id": 2,
+		"question": "How old your elder brother was 10 years before you was born, mate?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "10 years",
+				"isCorrect": true
+			},
+			{
+				"option": "B",
+				"text": "11 years",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "12 years",
+				"isCorrect": false
+			},
+			{
+				"option": "D",
+				"text": "14 years",
+				"isCorrect": false
+			}
+		],
+		"prize": "$1,000"
+	},
+	{
+		"id": 3,
+		"question": "How many continents are there on Earth?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "5",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "6",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "7",
+				"isCorrect": true
+			},
+			{
+				"option": "D",
+				"text": "8",
+				"isCorrect": false
+			}
+		],
+		"prize": "$2,000"
+	},
+	{
+		"id": 4,
+		"question": "Which is the largest ocean?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "Atlantic",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "Indian",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "Pacific",
+				"isCorrect": true
+			},
+			{
+				"option": "D",
+				"text": "Arctic",
+				"isCorrect": false
+			}
+		],
+		"prize": "$4,000"
+	},
+	{
+		"id": 5,
+		"question": "Which year marked the start of World War II?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "1914",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "1939",
+				"isCorrect": true
+			},
+			{
+				"option": "C",
+				"text": "1945",
+				"isCorrect": false
+			},
+			{
+				"option": "D",
+				"text": "1923",
+				"isCorrect": false
+			}
+		],
+		"prize": "$8,000"
+	},
+	{
+		"id": 6,
+		"question": "Which is the largest planet in the Solar System?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "Earth",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "Mars",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "Jupiter",
+				"isCorrect": true
+			},
+			{
+				"option": "D",
+				"text": "Saturn",
+				"isCorrect": false
+			}
+		],
+		"prize": "$16,000"
+	},
+	{
+		"id": 7,
+		"question": "How many chromosomes does a human have?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "23",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "46",
+				"isCorrect": true
+			},
+			{
+				"option": "C",
+				"text": "32",
+				"isCorrect": false
+			},
+			{
+				"option": "D",
+				"text": "50",
+				"isCorrect": false
+			}
+		],
+		"prize": "$32,000"
+	},
+	{
+		"id": 8,
+		"question": "Who wrote 'Hamlet'?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "Mark Twain",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "William Shakespeare",
+				"isCorrect": true
+			},
+			{
+				"option": "C",
+				"text": "Charles Dickens",
+				"isCorrect": false
+			},
+			{
+				"option": "D",
+				"text": "Oscar Wilde",
+				"isCorrect": false
+			}
+		],
+		"prize": "$64,000"
+	},
+	{
+		"id": 9,
+		"question": "How many players are on a football (soccer) team on the field?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "9",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "10",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "11",
+				"isCorrect": true
+			},
+			{
+				"option": "D",
+				"text": "12",
+				"isCorrect": false
+			}
+		],
+		"prize": "$125,000"
+	},
+	{
+		"id": 10,
+		"question": "Which gas is most abundant in Earth's atmosphere?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "Oxygen",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "Carbon dioxide",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "Nitrogen",
+				"isCorrect": true
+			},
+			{
+				"option": "D",
+				"text": "Helium",
+				"isCorrect": false
+			}
+		],
+		"prize": "$250,000"
+	},
+	{
+		"id": 11,
+		"question": "Which city is known as 'The Eternal City'?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "Athens",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "Rome",
+				"isCorrect": true
+			},
+			{
+				"option": "C",
+				"text": "Kyiv",
+				"isCorrect": false
+			},
+			{
+				"option": "D",
+				"text": "Paris",
+				"isCorrect": false
+			}
+		],
+		"prize": "$500,000"
+	},
+	{
+		"id": 12,
+		"question": "Who discovered America?",
+		"answers": [
+			{
+				"option": "A",
+				"text": "Ferdinand Magellan",
+				"isCorrect": false
+			},
+			{
+				"option": "B",
+				"text": "Vasco da Gama",
+				"isCorrect": false
+			},
+			{
+				"option": "C",
+				"text": "Christopher Columbus",
+				"isCorrect": true
+			},
+			{
+				"option": "D",
+				"text": "James Cook",
+				"isCorrect": false
+			}
+		],
+		"prize": "$1,000,000"
+	}
+]
