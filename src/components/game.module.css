@@ -1,17 +1,16 @@
 .l-game {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   height: 100vh;
   padding-bottom: 24px;
 }
 
 .question {
-  margin-top: 45%;
+  max-width: 624px;
+  display: flex;
   padding: 0 16px;
   font-size: 18px;
   text-align: center;
+  align-self: center;
 }
 
 .l-answers-container {
@@ -19,10 +18,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
+  align-self: flex-end;
 }
 
 .answer-option-button {
-  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .l-hexagon-container {
@@ -32,7 +35,7 @@
 .hexagon {
   --height: 56px;
   height: var(--height);
-  width: 288px;
+  width: 246px;
   background-color: var(--white);
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
@@ -61,7 +64,7 @@
     position: absolute;
     bottom: -1px;
     right: -1px;
-    width: 100vw;
+    width: 17px;
     height: 2px;
     background-color: var(--black-300);
   }
@@ -100,13 +103,50 @@
     position: absolute;
     bottom: -1px;
     left: -1px;
-    width: 100vw;
+    width: 17px;
     height: 2px;
     background-color: var(--black-300);
   }
 }
 
-.answer {
-  position: relative;
-  bottom: 35px;
+.l-answer {
+  display: flex;
+  gap: 8px;
+  padding-left: 16px;
+  position: absolute;
+}
+
+.answer__option {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--orange-300);
+}
+
+.answer__text {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black-500);
+}
+
+@media (min-width: 992px) {
+  .l-game {
+    padding-bottom: 122px;
+    padding-left: 80px;
+  }
+
+  .question {
+    font-size: 32px;
+  }
+
+  .l-answers-container {
+    width: 842px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 90px;
+  }
+
+  .hexagon {
+    width: 319px;
+  }
 }

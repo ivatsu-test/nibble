@@ -39,8 +39,9 @@ export default function Game({ questions }: { questions: Question[] }) {
               <div className={styles.hexagon} />
               <div className={styles.hexagon__right} />
             </div>
-            <div className={styles.answer}>
-              {answer.text}
+            <div className={styles['l-answer']}>
+              <span className={styles.answer__option}>{answer.option}</span>
+              <span className={styles.answer__text}>{answer.text}</span>
             </div>
           </button>
         ))}

@@ -5,3 +5,10 @@
   align-items: center;
   background-color: var(--black-100);
 }
+
+@media (min-width: 992px) {
+  .l-game-page {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
