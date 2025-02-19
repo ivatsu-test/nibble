@@ -1,0 +1,38 @@
+.menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.prize-section {
+  background-color: var(--black-100);
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 56px;
+  right: -100%;
+  transition: 850ms;
+  z-index: 20;
+}
+
+.prize-section--active {
+  right: 0;
+  transition: 450ms;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: calc(100vw - 320px);
+  height: 100vh;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.overlay--active {
+  display: block;
+}
