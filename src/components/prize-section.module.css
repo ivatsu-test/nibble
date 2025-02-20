@@ -40,6 +40,10 @@
   text-align: center;
 }
 
+.question-prize__title--active {
+  color: var(--orange-100);
+}
+
 .overlay {
   display: none;
   position: fixed;
