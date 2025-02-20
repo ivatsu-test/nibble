@@ -28,6 +28,7 @@ const eslintConfig = [
         },
       ],
       'import/no-extraneous-dependencies': 'off',
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
       'react/react-in-jsx-scope': 'off',
     },
