@@ -9,12 +9,12 @@ import styles from './game.module.css';
 
 export default function Game({ questions }: { questions: Question[] }) {
   const {
-    currentQuestionIndex, score, isGameOver, setCurrentQuestionIndex, incrementScore, setGameOver,
+    currentQuestionIndex, isGameOver, setCurrentQuestionIndex, setPrize, setGameOver,
   } = useGameStore();
 
   const handleAnswer = (isCorrect: boolean) => {
     if (isCorrect) {
-      incrementScore();
+      setPrize(questions[currentQuestionIndex].prize);
       if (currentQuestionIndex + 1 < questions.length) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
@@ -26,7 +26,7 @@ export default function Game({ questions }: { questions: Question[] }) {
   };
 
   if (isGameOver) {
-    return redirect(`${route.gameOver}?score=${score}`);
+    return redirect(route.gameOver);
   }
 
   return (
