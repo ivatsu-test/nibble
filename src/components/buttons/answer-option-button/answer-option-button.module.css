@@ -170,17 +170,21 @@
   --secondary-color: var(--orange-5);
 }
 
+.l-container:hover .hexagon--correct,
 .hexagon--correct {
   background-color: var(--green-5);
   border-color: var(--green-100);
 }
 
+.l-container:hover .hexagon__left--correct,
 .hexagon__left--correct,
+.l-container:hover .hexagon__right--correct,
 .hexagon__right--correct {
   --main-color: var(--green-100);
   --secondary-color: var(--green-5);
 }
 
+.l-container:hover .hexagon--wrong,
 .hexagon--wrong {
   background-color: var(--red-5);
   border-color: var(--red-100);
@@ -193,7 +197,9 @@
 }
 
 .hexagon__left--selected,
+.l-container:hover .hexagon__left--correct,
 .hexagon__left--correct,
+.l-container:hover .hexagon__left--wrong,
 .hexagon__left--wrong {
   border-right-color: var(--main-color);
   &::before {
@@ -205,7 +211,9 @@
 }
 
 .hexagon__right--selected,
+.l-container:hover .hexagon__right--correct,
 .hexagon__right--correct,
+.l-container:hover .hexagon__right--wrong,
 .hexagon__right--wrong {
   border-left-color: var(--main-color);
   &::after {

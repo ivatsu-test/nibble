@@ -61,7 +61,7 @@ export default function PrizeSection({ questions }: { questions: Question[] }) {
             const state = buttonState(question.id);
             return (
               <AnswerOptionButton key={question.id} kind={isDesktop ? 'prize-desktop' : 'prize-mobile'} onClick={() => {}} state={state} answerState="default">
-                <div className={clsx(styles['l-question-prize'], state === 'active' && styles['question-prize__title--active'])}>{question.prize}</div>
+                <div className={clsx(styles['l-question-prize'], state === 'active' && styles['question-prize__title--active'], state === 'inactive' && styles['question-prize__title--inactive'])}>{question.prize}</div>
               </AnswerOptionButton>
             );
           })}
