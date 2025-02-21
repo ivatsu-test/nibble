@@ -44,6 +44,10 @@
   color: var(--orange-100);
 }
 
+.question-prize__title--inactive {
+  color: var(--black-40);
+}
+
 .overlay {
   display: none;
   position: fixed;
