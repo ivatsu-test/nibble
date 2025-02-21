@@ -159,6 +159,63 @@
   }
 }
 
+.hexagon--selected {
+  background-color: var(--orange-5);
+  border-color: var(--orange-100);
+}
+
+.hexagon__left--selected,
+.hexagon__right--selected {
+  --main-color: var(--orange-100);
+  --secondary-color: var(--orange-5);
+}
+
+.hexagon--correct {
+  background-color: var(--green-5);
+  border-color: var(--green-100);
+}
+
+.hexagon__left--correct,
+.hexagon__right--correct {
+  --main-color: var(--green-100);
+  --secondary-color: var(--green-5);
+}
+
+.hexagon--wrong {
+  background-color: var(--red-5);
+  border-color: var(--red-100);
+}
+
+.hexagon__left--wrong,
+.hexagon__right--wrong {
+  --main-color: var(--red-100);
+  --secondary-color: var(--red-5);
+}
+
+.hexagon__left--selected,
+.hexagon__left--correct,
+.hexagon__left--wrong {
+  border-right-color: var(--main-color);
+  &::before {
+    background-color: var(--main-color);
+  }
+  &::after {
+    border-right-color: var(--secondary-color);
+  }
+}
+
+.hexagon__right--selected,
+.hexagon__right--correct,
+.hexagon__right--wrong {
+  border-left-color: var(--main-color);
+  &::after {
+    background-color: var(--main-color);
+  }
+  &::before {
+    border-left-color: var(--secondary-color);
+  }
+}
+
 @media (min-width: 992px) {
   .hexagon {
     width: 319px;
