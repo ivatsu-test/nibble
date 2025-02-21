@@ -21,6 +21,10 @@ function getAnswerState({ answer, answerOption, answerState }: {answer: Answer; 
   return 'default';
 }
 
+function wait(ms: number) {
+  return new Promise((resolve) => { setTimeout(resolve, ms); });
+}
+
 export default function Game({ questions }: { questions: Question[] }) {
   const {
     currentQuestionIndex, isGameOver, setCurrentQuestionIndex, setPrize, setGameOver,
@@ -28,14 +32,16 @@ export default function Game({ questions }: { questions: Question[] }) {
   const [answerOption, setAnswerOption] = useState<Answer['option'] | null>(null);
   const [answerState, setAnswerState] = useState<AnswerState>('default');
 
+  const wait1000Ms = () => wait(1000);
+
   const handleAnswer = async (answer: Answer) => {
     setAnswerOption(answer.option);
     setAnswerState('selected');
-    await new Promise((resolve) => { setTimeout(resolve, 1000); });
+    await wait1000Ms();
 
     if (answer.isCorrect) {
       setAnswerState('correct');
-      await new Promise((resolve) => { setTimeout(resolve, 1000); });
+      await wait1000Ms();
 
       setPrize(questions[currentQuestionIndex].prize);
       if (currentQuestionIndex + 1 < questions.length) {
@@ -45,7 +51,7 @@ export default function Game({ questions }: { questions: Question[] }) {
       }
     } else {
       setAnswerState('wrong');
-      await new Promise((resolve) => { setTimeout(resolve, 1000); });
+      await wait1000Ms();
       setGameOver();
     }
 
