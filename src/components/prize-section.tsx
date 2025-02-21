@@ -60,7 +60,7 @@ export default function PrizeSection({ questions }: { questions: Question[] }) {
           {reversedQuestions.map((question) => {
             const state = buttonState(question.id);
             return (
-              <AnswerOptionButton key={question.id} kind={isDesktop ? 'prize-desktop' : 'prize-mobile'} onClick={() => {}} state={state}>
+              <AnswerOptionButton key={question.id} kind={isDesktop ? 'prize-desktop' : 'prize-mobile'} onClick={() => {}} state={state} answerState="default">
                 <div className={clsx(styles['l-question-prize'], state === 'active' && styles['question-prize__title--active'])}>{question.prize}</div>
               </AnswerOptionButton>
             );

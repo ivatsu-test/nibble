@@ -1,7 +1,7 @@
 .l-page__container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding: 48px 16px;
 }
@@ -18,7 +18,6 @@
 .l-page-bg__game-over {
   background-color: var(--black-5);
 }
-
 
 .img-wrapper {
   display: flex;
