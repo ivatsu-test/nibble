@@ -138,10 +138,12 @@
   }
 }
 
+.l-container:hover .hexagon,
 .hexagon--active {
   border-color: var(--orange-100);
 }
 
+.l-container:hover .hexagon__left,
 .hexagon__left--active {
   border-right-color: var(--orange-100);
   &::before {
@@ -149,6 +151,7 @@
   }
 }
 
+.l-container:hover .hexagon__right,
 .hexagon__right--active {
   border-left-color: var(--orange-100);
   &::after {
