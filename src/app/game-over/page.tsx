@@ -3,7 +3,7 @@
 'use client';
 
 import PageLayout from '@/components/page-layout';
-import useGameStore from '@/store/gameStore';
+import useGameStore from '@/store/game-store';
 import styles from './game-over-page.module.css';
 
 export default function GameOverPage() {

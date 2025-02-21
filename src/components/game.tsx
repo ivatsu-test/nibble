@@ -3,7 +3,7 @@
 import { redirect } from 'next/navigation';
 import { Question } from '@/models/question';
 import route from '@/route';
-import useGameStore from '@/store/gameStore';
+import useGameStore from '@/store/game-store';
 import AnswerOptionButton from './buttons/answer-option-button/answer-option-button';
 import styles from './game.module.css';
 

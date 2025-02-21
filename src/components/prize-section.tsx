@@ -9,7 +9,7 @@ import { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { useMediaQuery } from 'usehooks-ts';
 import { Question } from '@/models/question';
-import useGameStore from '@/store/gameStore';
+import useGameStore from '@/store/game-store';
 import closeIcon from '../../public/close-icon.svg';
 import menuIcon from '../../public/menu-icon.svg';
 import AnswerOptionButton from './buttons/answer-option-button/answer-option-button';
