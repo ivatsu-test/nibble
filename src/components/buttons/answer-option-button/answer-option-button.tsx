@@ -37,12 +37,12 @@ const stylesByState = {
   hexagon__left: {
     default: '',
     active: styles['hexagon__left--active'],
-    inactive: '',
+    inactive: styles['hexagon__left--inactive'],
   },
   hexagon__right: {
     default: '',
     active: styles['hexagon__right--active'],
-    inactive: '',
+    inactive: styles['hexagon__right--inactive'],
   },
 };
 
