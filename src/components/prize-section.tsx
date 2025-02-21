@@ -9,7 +9,7 @@ import { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { useMediaQuery } from 'usehooks-ts';
 import { Question } from '@/models/question';
-import useGameStore from '@/store/gameStore';
+import useGameStore from '@/store/game-store';
 import closeIcon from '../../public/close-icon.svg';
 import menuIcon from '../../public/menu-icon.svg';
 import AnswerOptionButton from './buttons/answer-option-button/answer-option-button';
@@ -60,7 +60,7 @@ export default function PrizeSection({ questions }: { questions: Question[] }) {
           {reversedQuestions.map((question) => {
             const state = buttonState(question.id);
             return (
-              <AnswerOptionButton key={question.id} kind={isDesktop ? 'prize-desktop' : 'prize-mobile'} onClick={() => {}} state={state}>
+              <AnswerOptionButton key={question.id} kind={isDesktop ? 'prize-desktop' : 'prize-mobile'} onClick={() => {}} state={state} answerState="default">
                 <div className={clsx(styles['l-question-prize'], state === 'active' && styles['question-prize__title--active'])}>{question.prize}</div>
               </AnswerOptionButton>
             );

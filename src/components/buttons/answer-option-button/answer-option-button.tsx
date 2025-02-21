@@ -1,7 +1,10 @@
 import { clsx } from 'clsx';
 import styles from './answer-option-button.module.css';
 
+export type AnswerState = 'selected' | 'correct' | 'wrong' | 'default';
+
 interface AnswerOptionButtonProps extends React.PropsWithChildren {
+  answerState: AnswerState;
   kind: 'default' | 'prize-mobile' | 'prize-desktop';
   onClick: () => void;
   state: 'default' | 'active' | 'inactive'
@@ -43,19 +46,53 @@ const stylesByState = {
   },
 };
 
+const stylesByAnswerState = {
+  hexagon: {
+    selected: styles['hexagon--selected'],
+    correct: styles['hexagon--correct'],
+    wrong: styles['hexagon--wrong'],
+    default: '',
+  },
+  hexagon__left: {
+    selected: styles['hexagon__left--selected'],
+    correct: styles['hexagon__left--correct'],
+    wrong: styles['hexagon__left--wrong'],
+    default: '',
+  },
+  hexagon__right: {
+    selected: styles['hexagon__right--selected'],
+    correct: styles['hexagon__right--correct'],
+    wrong: styles['hexagon__right--wrong'],
+    default: '',
+  },
+};
+
 export default function AnswerOptionButton(props: AnswerOptionButtonProps) {
   const {
-    kind, children, onClick, state,
+    answerState, kind, children, onClick, state,
   } = props;
 
-  const hexagonLeft = clsx(stylesByKind.hexagon__left[kind], stylesByState.hexagon__left[state]);
-  const hexagonRight = clsx(stylesByKind.hexagon__right[kind], stylesByState.hexagon__right[state]);
+  const hexagon = clsx(
+    stylesByKind.hexagon[kind],
+    stylesByState.hexagon[state],
+    stylesByAnswerState.hexagon[answerState],
+  );
+  const hexagonLeft = clsx(
+    stylesByKind.hexagon__left[kind],
+    stylesByState.hexagon__left[state],
+    stylesByAnswerState.hexagon__left[answerState],
+  );
+  const hexagonRight = clsx(
+    stylesByKind.hexagon__right[kind],
+    stylesByState.hexagon__right[state],
+    stylesByAnswerState.hexagon__right[answerState],
+  );
 
   return (
     <button className={styles['l-container']} type="button" onClick={onClick}>
       <div className={styles['l-hexagon']}>
         <div className={hexagonLeft} />
-        <div className={clsx(stylesByKind.hexagon[kind], stylesByState.hexagon[state])} />
+        <div className={hexagon} />
         <div className={hexagonRight} />
       </div>
       {children}

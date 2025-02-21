@@ -2,7 +2,7 @@
 
 import { redirect } from 'next/navigation';
 import route from '@/route';
-import useGameStore from '@/store/gameStore';
+import useGameStore from '@/store/game-store';
 import styles from './start-button.module.css';
 
 export default function StartButton({ text }: {text: string}) {
